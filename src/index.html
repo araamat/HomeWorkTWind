@@ -1,25 +1,410 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-    <header class="bg-gray-200">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-blue text-2xl font-semibold">Nexcent</h1>
-            <nav>
-                <ul class="flex space-x-4 text-black">
-                    <li><a href="#" class="hover:text-gray-00">Home</a></li>
-                    <li><a href="#" class="hover:text-gray-200">Service</a></li>
-                    <li><a href="#" class="hover:text-gray-200">Feature</a></li>
-                    <li><a href="#" class="hover:text-gray-200">Product</a></li>
-                    <li><a href="#" class="hover:text-gray-200">Testimonial</a></li>
-                    <li><a href="#" class="hover:text-gray-200">FAQ</a></li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="hidden md:flex flex-row items-center justify-between w-full h-auto md:h-20 bg-[rgba(245, 247, 250, 1)] px-4">
+      <div class="flex items-center space-x-4 md:space-x-0 md:justify-center">
+        <div class="logo-icon w-[35px] h-[24px] md:w-auto md:h-auto">
+          <img src="../assets/Icon_header.png" alt="Logo" class="h-full" />
         </div>
+        <h1 class="text-blue text-2xl font-semibold">Nexcent</h1>
+      </div>
+      <ul
+        class="flex justify-between w-[588px] h-[24px] font-normal text-[#18191F] text-[16px]">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <div class="flex space-x-4 items-center">
+        <button
+          class="bg-white hover:bg-gray-100 text-green-500 font-semibold py-2 px-4 rounded"
+        >
+          Login
+        </button>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
+        >
+          Sign up
+        </button>
+      </div>
     </header>
-</body>
+
+    <section name="home" class="flex-col gap-[40px] flex bg-[#F5F7FA]">
+      <div
+        name="hero"
+        class="flex flex-col md:flex-row justify-center py-32 mx-auto md:gap-8 lg:gap-16">
+        <div name="home-txtbox" class="flex flex-col">
+          <div class="flex flex-col justify-center mx-auto">
+            <div class="flex justify-center pb-[16px]">
+              <h1
+                class="text-[64px] font-semibold leading-[72px] text-[#4D4D4D] w-[10ch]"
+              >
+                Lessons and insights <br /><span class="text-[#4CAF4F]"
+                  >from 8 years</span
+                >
+              </h1>
+            </div>
+            <p class="text-[#717171] w-[40ch]">
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+              Register
+            </button>
+          </div>
+        </div>
+        <div class="flex">
+          <img src="../assets/Illustration.svg" />
+        </div>
+      </div>
+      <div class="flex justify-center -mt-20 mb-6">
+        <img src="../assets/Dot.png"/>
+      </div>
+    </section>
+    
+    <section name="OurClients" class="flex flex-col md:flex- mx-auto lg:gap-16 bg-white">
+     <div name="clients-title" class="flex-col my-5">
+                <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">Our clients</h2>
+                <p class="flex justify-center font-normal text-[14px] text-[#717171]">We have been working with some
+                    Fortune 500+ clients</p>
+      </div>
+      <div name="client-logos" class="flex justify-center md:flex-row mx-auto lg:gap-20">
+                <img src="../assets/LogoC1.svg">
+                <img src="../assets/LogoC2.svg">
+                <img src="../assets/LogoC3.svg">
+                <img src="../assets/LogoC4.svg">
+                <img src="../assets/LogoC5.svg">
+                <img src="../assets/LogoC6.svg">
+       </div>
+        <div class="EntireCommunity" >
+            <div class="flex-col px-[144px] gap-[20px]">
+                <div class="flex-col my-5">
+                    <h2 class="flex justify-center text-center text-4xl font-semibold text-[#4D4D4D] my-4">Manage your
+                        entire
+                        community <br> in a single system</h2>
+                    <p class="flex justify-center font-normal text-[14px] text-[#717171]">Who is Nextcent suitable for?
+                    </p>
+                </div>
+                
+        <div name="CommunityOptions" class="flex justify-between px-[144px]">
+            <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
+                <div class="flex-row">
+                    <div class="flex justify-center mb-4"><img src="../assets/IconMember.svg"></div>
+                        <div class="flex text-center text-[28px] font-bold text-[#4D4D4D] mb-2">
+                             <h3>Membership Organisations</h3>
+                        </div>
+                    </div>
+                    <div class="flex text-center font-normal text-[14px] text-[#717171]">
+                        <p>Our membership management software provides full automation
+                                of membership renewals and payments</p>
+                    </div>
+                    </div>
+                    <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
+                        <div class="flex-row">
+                            <div class="flex justify-center mb-4"><img src="../assets/IconNational.svg"></div>
+                            <div class="flex text-center text-[28px] font-bold text-[#4D4D4D] mb-2">
+                                <h3>National Associations</h3>
+                            </div>
+                        </div>
+                        <div class="flex text-center font-normal text-[14px] text-[#717171]">
+                            <p>Our membership management software provides full automation of membership renewals and
+                                payments</p>
+                        </div>
+                    </div>
+                    <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
+                        <div class="flex-row">
+                            <div class="flex justify-center mb-4"><img src="../assets/IconClubsAndG.svg"></div>
+                            <div
+                                class="flex justify-center text-center text-[28px] font-bold text-[#4D4D4D] break-words mb-2">
+                                <h3>Clubs And <br> Groups</h3>
+                            </div>
+                        </div>
+                        <div class="flex text-center font-normal text-[14px] text-[#717171]">
+                            <p>Our membership management software provides full automation of membership renewals and
+                                payments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section name="Pixelgrade" class="flex flex-col justify-center space-y-[48px] pb-[95px]">
+        <div name="unlock" class="flex justify-center space-x-[49px] px-[144px]">
+            <div class="flex w-[442px] mt-[52px] "><img src="../assets/Frame 35.svg"></div>
+            <div class="flex-col w-[661px] space-y-[32px]">
+                <div class="flex-col w-[601px] space-y-4 mt-[82px]">
+                    <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">The unseen of spending
+                        three years at Pixelgrade</h2>
+                    <p class="flex font-normal text-[14px] text-[#717171]">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+                        Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+                        pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus
+                        sem. Donec elementum pulvinar odio.</p>
+                </div>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Learn more
+                </button>
+            </div>
+        </div>
+
+    </section>
+        <div name="achievments" class="flex bg-[#F5F7FA] justify-evenly px-[144px] ">
+            <div class="flex-col w-[540px] my-[84px] space-y-2">
+                <div class="flex w-[408px]">
+                    <h2 class="text-4xl font-semibold text-[#4D4D4D]">Helping a local <br><span
+                            class="text-[#4CAF4F]">business reinvent itself</span></h2>
+                </div>
+                <p class="font-normal text-[14px]">We reached here with our hard work and dedication</p>
+            </div>
+            <div name="counts-frame" class="flex-col my-[64px] space-y-[40px]">
+                <div class="flex gap-[30px]">
+                    <div name="counts-row1" class="flex gap-4">
+                        <div class="flex"><img src="../assets/IconMembers1.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>2,245,341</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Members</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex"><img src="../assets/IconClubs.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>46,328</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Clubs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-[30px]">
+                    <div class="flex gap-4">
+                        <div class="flex"><img src="../assets/Vector1.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>828,867</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Event Bookings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex"><img src="../assets/IconPay.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>1,926,436</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Payments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div name="calendar" class="flex justify-evenly px-[144px]">
+            <div class="flex w-[442px] h-[433px]"><img src="../assets/pana.jpg"></div>
+            <div class="flex-row w-[661px] gap-[32px]">
+                <div class="flex-row w-[601px] gap-4">
+                    <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">How to design your site
+                        footer like we did</h2>
+                    <p class="flex font-normal text-[14px] text-[#717171]">Donec a eros justo. Fusce egestas tristique
+                        ultrices. Nam tempor, augue nec tincidunt
+                        molestie, massa nunc varius arcu,
+                        at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+                        habitasse platea dictumst. Vivamus
+                        vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies,
+                        non aliquet urna tincidunt.
+                        Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est,
+                        finibus et nisi ac, hendrerit
+                        venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                </div>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Learn more
+                </button>
+            </div>
+        </div>
+        <div name="customer" class="flex justify-center bg-[#F5F7FA] px-[144px] py-[32px] ">
+            <div name="customer-layout" class="flex space-x-[78px]">
+                <div class="flex w-[326px] h-[326px] radius-[8px]"><img src="../assets/image 9.svg"></div>
+                <div name="customer-txtbox" class="flex-row space-y-[32px] w-[784px]">
+                    <div class="flex-row space-y-[16px]">
+                        <p class=" flex font-medium text-base text-[#717171]">Maecenas dignissim justo eget nulla rutrum
+                            molestie.Maecenas lobortis sem dui, vel rutrum
+                            risus tincidunt ullamcorper.
+                            Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
+                            molestie arcu, at hendrerit
+                            elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+                            tellus sed augue ultrices, quis
+                            tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+                            potenti. Quisque malesuada
+                            enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur
+                            libero condimentum id.
+                            Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                        <div class="flex-row space-y-[8px]">
+                            <div class="flex font-semibold text-[20px] text-[#4CAF4F]">
+                                <h3>Tim Smith</h3>
+                            </div>
+                            <div class="flex font-normal text-base text-[#89939E]">British Dragon Boat Racing
+                                Association</div>
+                        </div>
+                    </div>
+                    <div name="other-customers" class="flex space-x-[28px]">
+                        <div class="flex space-x-[41px]">
+                            <img src="../assets/LogoC1.svg">
+                            <img src="../assets/LogoC2.svg">
+                            <img src="../assets/LogoC3.svg">
+                            <img src="../assets/LogoC4.svg">
+                            <img src="../assets/LogoC5.svg">
+                            <img src="../assets/LogoC6.svg">
+                        </div>
+                        <div class="flex p-2 font-semibold text-[20px] text-[#4CAF4F] space-x-2">
+                            <a href="">
+                                <h4>Meet all customers</h4>
+                            </a>
+                            <div class="flex"><img src="../assets/right.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div name="community-updates" class="flex-col space-y-4 pb-[95px]">
+            <div class="flex-col justify-center text-center space-y-2">
+                <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D]">Caring is the new marketing</h2>
+                <p class="flex justify-center text-base text-[#717171] font-normal">The Nexcent blog is the best place
+                    to read about the latest membership insights, <br> trends and more.
+                    See who's joining the community, read about how our community <br>are increasing their membership
+                    income and lot's more.
+                </p>
+            </div>
+            <div name="community-options" class="flex justify-center space-x-[24px] mx-[144px]">
+                <div class="flex-col w-[368px] h-[366px]">
+                    <div class="flex radius-2">
+                        <img src="../assets/image 18.svg">
+                    </div>
+                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4 w-[317px] h-[176px]">
+                        <div class="flex w-[285px] h-[84px]">
+                            <h4 class="flex font-semibold text-xl text-center text-[#717171]">Creating Streamlined
+                                Safeguarding Processes with OneRen</h4>
+                        </div>
+                        <div class="flex justify-center p-2 space-x-2">
+                            <a class="flex font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
+                            <div class="flex"><img src="../assets/right.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col w-[368px] h-[366px]">
+                    <div class="flex radius-2">
+                        <img src="../assets/image 19.svg">
+                    </div>
+                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4 w-[317px] h-[176px]">
+                        <div class="flex w-[285px] h-[84px]">
+                            <h4 class="flex font-semibold text-xl text-center text-[#717171]">What are your safeguarding
+                                responsibilities and how can you manage them?</h4>
+                        </div>
+                        <div class="flex justify-center p-2 space-x-2">
+                            <a class="flex font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
+                            <div class="flex"><img src="../assets/right.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col w-[368px] h-[366px]">
+                    <div class="flex radius-2">
+                        <img src="../assets/image 20.svg">
+                    </div>
+                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4 w-[317px] h-[176px]">
+                        <div class="flex w-[285px] h-[84px]">
+                            <h4 class="flex font-semibold text-xl text-center text-[#717171]">Revamping the Membership
+                                Model with Triathlon Australia</h4>
+                        </div>
+                        <div class="flex justify-center p-2 space-x-2">
+                            <a class="flex font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
+                            <div class="flex"><img src="../assets/right.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section name="footer" class="flex-col">
+        <div class="flex-col py-[32px] space-y-[32px] bg-[#F5F7FA]">
+            <div class="flex justify-center">
+                <h1 class="text-[64px] font-semibold text-center">Pellentesque suscipit <br>fringilla libero eu.</h1>
+            </div>
+            <div class="flex justify-center">
+                 <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded">Get a Demo<img src="../assets/right.jpg">
+                </button>
+            </div>
+        </div>
+        <div name="footer-frame" class="flex justify-around px-[165px] py-[64px] bg-[#263238] text-white">
+            <div name="company-info" class="flex-col w-[350px] space-y-[40px]">
+                <div class="flex"><img src="../assets/footerlogo.JPG"></div>
+                <div class="flex space-y-2">
+                    <p class="font-normal text-sm text-[#F5F7FA]">Copyright © 2020 Nexcent ltd.<br>All rights reserved
+                    </p>
+                </div>
+                <div class="flex">
+                    <a href=""><img src="../assets/footersocial.JPG"></a>
+                </div>
+            </div>
+            <div name="company-links" class="flex space-x-[30px] w-[635px]">
+                <div name="company" class="flex-col w-[160px] space-y-6">
+                    <div class="flex">
+                        <p class="font-semibold text-xl text-white">Company</p>
+                    </div>
+                    <div class="flex-col space-y-3 font-normal text-[14px] text-[#F5F7FA]">
+                        <a class="flex" href="">About us</a>
+                        <a class="flex" href="">Blog</a>
+                        <a class="flex" href="">Contact us</a>
+                        <a class="flex" href="">Pricing</a>
+                        <a class="flex" href="">Testimonials</a>
+                    </div>
+                </div>
+                <div name="support" class="flex-col w-[160px] space-y-6">
+                    <div class="flex">
+                        <p class="font-semibold text-xl text-white">Support</p>
+                    </div>
+                    <div class="flex-col space-y-3 font-normal text-[14px] text-[#F5F7FA]">
+                        <a class="flex" href="">Help center></a>
+                        <a class="flex" href="">Terms of service</a>
+                        <a class="flex" href="">Legal</a>
+                        <a class="flex" href="">Privacy policy</a>
+                        <a class="flex" href="">Status</a>
+                    </div>
+                </div>
+                <div name="up-to-date" class="flex-col w-[255px] space-y-6 ">
+                    <div class="flex">
+                        <p class="font-semibold text-xl text-white">Stay up to date</p>
+                    </div>
+                    <form>
+                        <label class="relative block">
+                            <span class="absolute inset-y-0 right-0 flex items-center">
+                                <a href=""><img src="../assets/send.svg"></a>
+                                <svg class="h-[18px] w-[18px]"></svg>
+                            </span>
+                            <input class="block bg-zinc-600 w-full rounded-md py-2 pl-3 placeholder:text-[#D9DBE1]"
+                                placeholder="Your email address" type="email" name="email">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+  </body>
 </html>
